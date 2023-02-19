@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  android-console:
+    image: docker-build-test-app:1.0.0
+    # command: 
+    volumes: 
+      - .:/root/build docker-build-test-app
+    command: /usr/bin/zsh cd build
+  
